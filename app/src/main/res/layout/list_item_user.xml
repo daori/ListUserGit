@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp">
+
+    <ImageView
+        android:layout_alignParentLeft="true"
+        android:id="@+id/avatar_url"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="Avatar Url"
+        android:src="@drawable/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/login_name"
+        android:layout_toRightOf="@id/avatar_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/avatar_url"
+        android:text="login Name"/>
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:onClick="removeItem"/>
+
+</RelativeLayout>
